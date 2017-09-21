@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wenmingkeji.peiliao.activities.TimeManagerActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorMain"
+        android:padding="@dimen/padding_m">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/time_manager"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="@dimen/text_large"/>
+
+
+        <ImageButton
+            android:id="@+id/ic_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:background="@color/colorAlpha"
+            android:src="@drawable/icon_home_fh"/>
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/smallSpace"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/colorTextWhite"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/padding_m"
+        android:paddingStart="@dimen/padding_m"
+        android:paddingTop="@dimen/padding_s">
+
+        <ImageButton
+            android:id="@+id/iv_mon_normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAlpha"
+            android:padding="@dimen/smallSpace"
+            android:src="@drawable/icon_time_selected"/>
+
+        <ImageView
+            android:id="@+id/iv_tue_normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/smallSpace"
+            android:src="@drawable/icon_time_selected"/>
+
+        <ImageView
+            android:id="@+id/iv_wed_normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/smallSpace"
+            android:src="@drawable/icon_time_selected"/>
+
+        <ImageView
+            android:id="@+id/iv_thu_normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/smallSpace"
+            android:src="@drawable/icon_time_selected"/>
+
+        <ImageView
+            android:id="@+id/iv_fri_normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/smallSpace"
+            android:src="@drawable/icon_time_selected"/>
+
+        <ImageView
+            android:id="@+id/iv_sta_normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/smallSpace"
+            android:src="@drawable/icon_time_selected"/>
+
+        <ImageView
+            android:id="@+id/iv_sun_normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/smallSpace"
+            android:src="@drawable/icon_time_selected"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_l"
+        android:paddingEnd="@dimen/padding_m"
+        android:paddingStart="@dimen/padding_m">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/smallSpace"
+            android:text="@string/monday"
+            android:textSize="@dimen/text_tip"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/smallSpace"
+            android:text="@string/Tuesday"
+            android:textSize="@dimen/text_tip"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/smallSpace"
+            android:text="@string/Wednesday"
+            android:textSize="@dimen/text_tip"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/smallSpace"
+            android:text="@string/Thursday"
+            android:textSize="@dimen/text_tip"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/smallSpace"
+            android:text="@string/Friday"
+            android:textSize="@dimen/text_tip"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/smallSpace"
+            android:text="@string/Saturday"
+            android:textSize="@dimen/text_tip"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/smallSpace"
+            android:text="@string/Sunday"
+            android:textSize="@dimen/text_tip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_time_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+<RelativeLayout
+    android:padding="10dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/colorTextWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_grrz_zmxyrz"/>
+    <TextView
+        android:id="@+id/tv_auth"
+        android:textSize="16dp"
+        style="@style/textStyle1"
+        android:text="   芝麻信用认证"
+        android:drawableLeft="@drawable/icon_grrz_rztb"
+        android:layout_marginLeft="170dp"/>
+    <ImageView
+        android:id="@+id/iv_yesOrno"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_grrz_wrz"/>
+    <TextView
+
+        android:id="@+id/tv_whetherCertification"
+        android:textSize="15dp"
+        android:layout_marginTop="40dp"
+        style="@style/textStyle1"
+        android:text="未认证"
+        android:textColor="@color/colorDotSelected"
+        android:layout_marginLeft="200dp"/>
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+<RelativeLayout
+    android:padding="10dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/colorTextWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_grrz_zmxyrz"/>
+    <ImageView
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_grrz_rztb"/>
+    <TextView
+        android:id="@+id/tv_auth"
+        android:textSize="16dp"
+        style="@style/textStyle1"
+        android:text="心理咨询师"
+        android:layout_marginLeft="200dp"/>
+    <ImageView
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_grrz_wrz"/>
+    <TextView
+        android:id="@+id/tv_whetherCertification"
+        android:textSize="15dp"
+        android:layout_marginTop="36dp"
+        style="@style/textStyle1"
+        android:text="未认证"
+        android:textColor="@color/colorDotSelected"
+        android:layout_marginLeft="200dp"/>
+    <TextView
+        android:id="@+id/SkillContent"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提供心里咨询师"/>
+</RelativeLayout>
+
+
+</LinearLayout>

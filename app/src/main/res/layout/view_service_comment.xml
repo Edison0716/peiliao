@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_m">
+
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <com.wenmingkeji.peiliao.view.CircleImageView
+
+            android:id="@+id/icon_head"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon_common_food"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/padding_s"
+            android:layout_toEndOf="@+id/icon_head"
+            android:text="暴***莉"/>
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tv_user_name"
+            android:text="@string/ican"
+            android:textColor="@color/colorTextBlue"
+            android:textSize="@dimen/text_tip"/>
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/textView31"
+            android:text="定制生日蛋糕"
+            android:textColor="@color/colorTextBlue"
+            android:textSize="@dimen/text_tip"/>
+
+        <ImageView
+            android:id="@+id/tv_comment_level_buyer"
+            android:layout_width="100dp"
+            android:layout_height="14dp"
+            android:layout_alignTop="@+id/textView32"
+            android:layout_toEndOf="@+id/textView32"
+            android:src="@drawable/icon_comment_level_4"/>
+
+        <TextView
+            android:id="@+id/tv_time_buyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="2星期前"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="@dimen/padding_m"
+        android:background="@color/colorDivBackground"
+        android:padding="@dimen/padding_m">
+
+
+        <com.wenmingkeji.peiliao.view.CircleImageView
+
+            android:id="@+id/icon_head_seller"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon_common_food"/>
+
+        <TextView
+            android:id="@+id/tv_user_name_seller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="@dimen/padding_m"
+            android:layout_toEndOf="@+id/icon_head_seller"
+            android:text="暴***莉"/>
+
+
+        <ImageView
+            android:id="@+id/iv_comment_level_seller"
+            android:layout_width="100dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="@dimen/padding_m"
+            android:layout_toEndOf="@+id/tv_user_name_seller"
+            android:src="@drawable/icon_comment_level_4"/>
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/padding_m"
+            android:text="2星期前"/>
+
+
+        <TextView
+            android:id="@+id/tv_comment_seller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_user_name_seller"
+            android:layout_below="@+id/icon_head_seller"
+            android:layout_marginTop="@dimen/padding_s"
+            android:text="系统默认评价"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_content"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

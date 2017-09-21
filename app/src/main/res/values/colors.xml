@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f8cd00</color>
+    <color name="colorPrimaryDark">#f8cd00</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#f8f8f8</color>
+    <color name="colorMain">#f8cd00</color>
+    
+    <color name="colorTextLevel">#f46737</color>
+    <color name="colorText">#232323</color>
+    <color name="colorTextGray">#939393</color>
+    <color name="colorTextYellow">#ffce02</color>
+    <color name="colorTextLightGray">#c7c7c7</color>
+    <color name="colorTextPrice">#e47056</color>
+    <color name="colorDivLine">#d1d0d0</color>
+    <color name="colorDockSelected">#f8bc00</color>
+    <color name="colorTextWhite">#fffffd</color>
+    <color name="colorDotSelected">#f8cd00</color>
+    <color name="colorDotUnselected">#ffffff</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorHalfAlpha">#e0000000</color>
+    <color name="colorAlpha">#00000000</color>
+    <color name="colorOrderStatusText">#fb7e00</color>
+    <color name="colorOrderStatusDetailsText">#e6a560</color>
+    <color name="colorOrderStatusBackground">#fef9d4</color>
+    <color name="colorDivBackground">#f0f0f0</color>
+    <color name="colorTextDeepGray">#6f6f6f</color>
+    <color name="colorTextBlue">#54c8f2</color>
+    <color name="colorDivComment">#f9f9f9</color>
+    <color name="colorRed">#fa8565</color>
+    <color name="colorChatBackground">#f1f1f1</color>
+
+
+    <!-- common -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#4f000000</color>
+    <color name="orange">#f27242</color>
+
+    <!-- background -->
+    <color name="bg">#FFF5F5F5</color>
+    <color name="bg_pressed">#FFF2F2F2</color>
+
+    <!-- material design black font color -->
+    <color name="font_black_0">#212121</color>
+    <color name="font_black_1">#424242</color>
+    <color name="font_black_2">#616161</color>
+    <color name="font_black_3">#757575</color>
+    <color name="font_black_4">#9e9e9e</color>
+    <color name="font_black_5">#bdbdbd</color>
+    <color name="font_black_6">#e0e0e0</color>
+
+    <!-- divider -->
+    <color name="divider_1">#e2e2e2</color>
+    <color name="divider_2">#e6e6e6</color>
+    <color name="colorDivComment1">#f1f1f1</color>
+
+</resources>

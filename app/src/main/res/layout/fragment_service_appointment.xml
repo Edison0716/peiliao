@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="@dimen/padding_l">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ad3"/>
+
+        <TextView
+            android:id="@+id/tv_order_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/padding_l"
+            android:layout_toEndOf="@+id/imageButton2"
+            android:text="定制生日蛋糕"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_title"/>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_order_item_title"
+            android:layout_alignTop="@+id/tv_service_stock"
+            android:text="@string/stock"
+            android:textColor="@color/colorTextGray"/>
+
+        <TextView
+            android:id="@+id/tv_service_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageButton2"
+            android:layout_alignStart="@+id/textView17"
+            android:text="198 元"
+            android:textColor="@color/colorTextPrice"
+            android:textSize="@dimen/text_title"/>
+
+        <TextView
+            android:id="@+id/tv_service_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView17"
+            android:text="15"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorAlpha"
+            android:src="@drawable/icon_order_commit_close"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDivLine"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_l">
+        
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_srevice"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_title"/>
+        
+        
+        <ImageButton
+            android:layout_width="63dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/padding_m"
+            android:background="@color/colorAlpha"
+            android:scaleType="fitXY"
+            android:src="@drawable/abc_arrow_up"/>
+        
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDivLine"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="@dimen/padding_l">
+
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="购买数量"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_title"/>
+
+
+        <LinearLayout
+
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_choose_num">
+
+            <ImageButton
+                android:id="@+id/ibtn_order_minus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAlpha"
+                android:src="@drawable/icon_order_minus"/>
+
+            <TextView
+                android:id="@+id/tv_service_num"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1"/>
+
+            <ImageButton
+                android:id="@+id/ibtn_order_plus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAlpha"
+                android:src="@drawable/icon_order_plus"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDivLine"/>
+    
+    
+    
+    <ImageButton
+        android:id="@+id/ibtn_appoint_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorAlpha"
+        android:src="@drawable/icon_order_commit_appointment"/>
+
+
+
+
+</LinearLayout>

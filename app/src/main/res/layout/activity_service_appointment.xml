@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorMain">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/service_appointment"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="18sp"/>
+
+
+            <ImageButton
+                android:id="@+id/ic_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+
+                android:background="#00000000"
+                android:src="@drawable/icon_common_back"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp">
+
+
+            <com.wenmingkeji.peiliao.view.CircleImageView
+                android:id="@+id/icon_head"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/icon_common_food"/>
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/padding_xl"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/icon_head"
+                android:text="糊涂虫"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_title"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorDivLine"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="@dimen/padding_l">
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ad3"/>
+
+            <TextView
+                android:id="@+id/tv_order_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/padding_l"
+                android:layout_toEndOf="@+id/imageButton2"
+                android:text="定制生日蛋糕"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_title"/>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tv_order_item_title"
+                android:layout_alignTop="@+id/tv_service_stock"
+                android:text="@string/service_size"
+                android:textColor="@color/colorTextGray"/>
+
+            <TextView
+                android:id="@+id/tv_service_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageButton2"
+                android:layout_alignStart="@+id/textView17"
+                android:text="198 元"
+                android:textColor="@color/colorTextPrice"
+                android:textSize="@dimen/text_title"/>
+
+            <TextView
+                android:id="@+id/tv_service_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView17"
+                android:text="个"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorDivLine"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="@dimen/padding_l">
+
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="购买数量"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_title"/>
+
+
+            <LinearLayout
+
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_choose_num">
+
+                <ImageButton
+                    android:id="@+id/ibtn_order_minus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorAlpha"
+                    android:src="@drawable/icon_order_minus"/>
+
+                <TextView
+                    android:id="@+id/tv_service_num"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1"/>
+
+                <ImageButton
+                    android:id="@+id/ibtn_order_plus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorAlpha"
+                    android:src="@drawable/icon_order_plus"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorDivLine"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="@dimen/padding_l">
+
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/contact"/>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:text="上海市青浦区天河商业大厦C座3215"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView25"
+                android:text="行走的吃货，13222222222"/>
+
+            <ImageView
+                android:id="@+id/img_arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_common_arrow_right"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorDivLine"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_l"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorDivBackground"
+            android:gravity="center|start"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_s"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/leave_message"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_title"/>
+
+            <EditText
+                android:id="@+id/et_input_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/input_leave_message"
+                android:textSize="@dimen/text_title"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorDivBackground">
+
+
+        <ImageButton
+            android:id="@+id/ibtn_order_commit"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon_order_comfirm_commit"/>
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/padding_m"
+            android:text="@string/totalprice"
+            android:textSize="@dimen/text_title"/>
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView27"
+            android:layout_toEndOf="@+id/textView27"
+            android:text="198.00 元"
+            android:textColor="@color/colorTextPrice"
+            android:textSize="@dimen/text_title"/>
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/padding_m"
+            android:layout_toStartOf="@+id/ibtn_order_commit"
+            android:text="98.00 元"
+            android:textSize="@dimen/text_content"/>
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/textView29"
+            android:text="@string/sale"
+            android:textSize="@dimen/text_content"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

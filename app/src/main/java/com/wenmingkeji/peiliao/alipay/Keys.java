@@ -1,0 +1,18 @@
+package com.wenmingkeji.peiliao.alipay;
+
+/**
+ * @author xusangbo 支付宝key信息
+ */
+public class Keys
+{
+	// 商户PID
+	public static final String PARTNER = "2088602233044589";
+	// 商户收款账号
+	public static final String SELLER = "18745020615";
+	// 商户私钥，pkcs8格式
+	//网络获取
+	public static final String RSA_PRIVATE = "MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBANjEswkh2H2hWV5YenrnYByqGu4/nOk9H8Zll11IAQvU3kadpVpZCq+fZY2soNUvvR7q0YJZh7xOn1OwK7FCbCq4c4/J82u61jAh2MKk5RQl/OwRwt35CeU9NTQX3QSn6MHK+e5apRQn1PmkahbBNHiMqUDdaEaywCILFAasHzYZAgMBAAECgYEAql6m7JWKZutKp0lZMoHp232i3wBmXjbpY3BzcCBomhj7fnrm/EShjnj0Q06bthLoTIV4lz+w3ELbHNaI8K/o/JRb99No2W+dyMC289/MpBbvJN/h1oDZ60syPbgmdLieOsalK8Eqind+8ccLbLBzX/avjdKaSZk1kLz0PNdtJ1ECQQDuRAavGdM4QuJqK7thrX8E36etUrUIpd2HtGJ9aXMXeoAmP3amyCKTeEtehFihoS+kekke2N8jkpDvioB+biTlAkEA6OcOm3ckBVC1aganjnDIar0jZXafvRVRxX0yMD8cYEWGd/5e66PUh5jWGktpEToC8aOJZQKUFAAlbgjRIf9NJQJAKF6eQ0y83Ot4MUT3mrUqsEi0wEkjIzP3NOb7SQR026WF0PUvxVJjiVj4bCtAWSJWUCfn+7IDHKPYqr1sx/8hgQJAUvrv82gxh0tIN6yDSnbYkV8uG1p2c3IDHnAKz7HMtGhRDrOsshw+/sjvj5LKrn6SyfFQZJLUm4Op0liF2q0RmQJBAM3beHqybkmDN6mHsLToWZMh7iUg9ldlw4AB88dPnOkNHSXDNGjzqDFumMFt9OijNQfx2GTAVlSXK+4aica7FVU=";
+	// 支付宝公钥
+	//应该没必要写
+	public static final String RSA_PUBLIC = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDI6d306Q8fIfCOaTXyiUeJHkrIvYISRcc73s3vF1ZT7XN8RNPwJxo8pWaJMmvyTn9N4HQ632qJBVHf8sxHi/fEsraprwCtzvzQETrNRwVxLO5jVmRGi60j8Ue1efIlzPXV9je9mkjzOmdssymZkh2QhUrCmZYI/FCEa3/cNMW0QIDAQAB";
+}

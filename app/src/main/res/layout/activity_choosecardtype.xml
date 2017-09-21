@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorMain">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提现选择账号类型"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="18sp"/>
+
+
+        <ImageButton
+            android:id="@+id/ic_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="#00000000"
+            android:src="@drawable/icon_common_back1"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+    <TextView
+        style="@style/textStyle1"
+        android:textSize="18dp"
+        android:layout_marginLeft="16dp"
+        android:text="为了保障您的资金安全，请认证后在提现"/>
+<RelativeLayout
+    android:id="@+id/individualCertification"
+    android:padding="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/colorTextWhite"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <ImageView
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/icon_withdrawal_personal"/>
+    <TextView
+        android:textColor="@color/colorBlack"
+        style="@style/textStyle1"
+        android:text="个人认证"
+        android:textSize="20sp"
+        android:layout_marginLeft="100dp"/>
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="50dp"
+        style="@style/textStyle1"
+        android:text="体现账号为个人支付宝账号"
+        android:textSize="15sp"
+        android:layout_marginLeft="100dp"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/enterpriseCertification"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorTextWhite"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/icon_withdrawal_enterprise"/>
+        <TextView
+            android:textColor="@color/colorBlack"
+            style="@style/textStyle1"
+            android:text="企业认证（未认证）"
+            android:textSize="20sp"
+            android:layout_marginLeft="100dp"/>
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="50dp"
+            style="@style/textStyle1"
+            android:text="体现账号为企业支付宝账号"
+            android:textSize="15sp"
+            android:layout_marginLeft="100dp"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/textStyle1"
+        android:textSize="12dp"
+        android:layout_marginLeft="10dp"
+        android:text="选择后如需更改提现到支付宝账号类型，请联系客服4006999980"/>
+</LinearLayout>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorMain"
+        android:padding="@dimen/padding_m">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="详情"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="@dimen/text_large"/>
+
+
+        <ImageButton
+            android:id="@+id/tv_next_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/smallSpace"
+            android:background="@color/colorAlpha"
+            android:src="@drawable/icon_niurenzy_more"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_m">
+
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.wenmingkeji.peiliao.view.CircleImageView
+                android:id="@+id/icon_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_common_food"/>
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/icon_head"
+                android:text="糊涂虫"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_title"/>
+
+            <TextView
+                android:id="@+id/tv_user_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:layout_toRightOf="@+id/icon_head"
+                android:text="初级画师"
+                android:textColor="#f46737"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/iv_level_img"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="46dp"
+                android:layout_toRightOf="@+id/icon_head"
+                android:src="@drawable/icon_common_assessment_selected"/>
+
+            <ImageButton
+                android:id="@+id/ibtn_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="23dp"
+                android:background="@color/colorAlpha"
+                android:src="@drawable/icon_niuren_gz"/>
+
+            <TextView
+                android:id="@+id/tv_fans_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_user_level"
+                android:layout_marginStart="@dimen/padding_m"
+                android:layout_toEndOf="@+id/tv_user_level"
+                android:text="257"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_tip"/>
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_user_level"
+                android:layout_marginStart="@dimen/padding_s"
+                android:layout_toEndOf="@+id/tv_fans_num"
+                android:text="粉丝"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_tip"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_m"
+            android:paddingTop="@dimen/padding_m"
+            android:text="@string/zone_content"
+            android:textSize="@dimen/text_title"/>
+
+
+        <RelativeLayout
+            android:id="@+id/ll_img_def"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_s">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_preview"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ad1">
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/padding_s"
+                        android:background="@drawable/bg_niuren_time"
+                        android:gravity="center"
+                        android:text="@string/time"
+                        android:textColor="@color/colorTextWhite"/>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:id="@+id/iv_preview2"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ad1"/>
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:id="@+id/iv_preview3"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ad1"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ad1"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/padding_s"
+                android:background="@drawable/bg_niuren_time"
+                android:gravity="center"
+                android:text="@string/time"
+                android:textColor="@color/colorTextWhite"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_m"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_refer_more"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:paddingBottom="@dimen/padding_m"
+            android:paddingTop="@dimen/padding_m">
+
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/icon_niuren_link"/>
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="19dp"
+                android:layout_toEndOf="@+id/imageView9"
+                android:text="撒娇卖萌专业户"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_title"/>
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_common_arrow_right"/>
+
+
+            <ImageView
+                android:id="@+id/iv_comment_level"
+                android:layout_width="70dp"
+                android:layout_height="15dp"
+                android:layout_alignStart="@+id/tv_tips"
+                android:layout_below="@+id/tv_tips"
+                android:layout_marginTop="@dimen/padding_s"
+                android:src="@drawable/icon_comment_level_4"/>
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="25dp"
+                android:text=" 人已约单"/>
+
+            <TextView
+                android:id="@+id/tv_level_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_comment_level"
+                android:layout_marginStart="@dimen/smallSpace"
+                android:layout_toEndOf="@+id/iv_comment_level"
+                android:text="3.8"
+                android:textColor="@color/colorMain"
+                android:textSize="@dimen/text_tip"/>
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/textView37"
+                android:text="0 "/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorDivLine"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60">
+
+
+            <ImageButton
+                android:id="@+id/ibtn_comment"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorAlpha"
+                android:src="@drawable/icon_niuren_pj"/>
+
+            <ImageButton
+                android:id="@+id/ibtn_like"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignTop="@+id/ibtn_comment"
+                android:layout_marginStart="22dp"
+                android:layout_toEndOf="@+id/ibtn_comment"
+                android:background="@color/colorAlpha"
+                android:src="@drawable/icon_niuren_zan"/>
+
+            <ImageButton
+                android:id="@+id/ibtn_donate"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignTop="@+id/ibtn_like"
+                android:layout_marginStart="22dp"
+                android:layout_toEndOf="@+id/ibtn_like"
+                android:background="@color/colorAlpha"
+                android:src="@drawable/icon_niuren_trading"/>
+
+            <ImageButton
+                android:id="@+id/ibtn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorAlpha"
+                android:src="@drawable/icon_niuren_more"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_m"
+        android:background="@color/colorDivBackground"/>
+
+</LinearLayout>
+

@@ -1,0 +1,304 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.wenmingkeji.peiliao.activities.Main4ActivityFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorMain"
+        android:padding="@dimen/padding_m">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/publish_service"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="@dimen/text_large"/>
+
+
+        <ImageButton
+            android:id="@+id/ic_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:background="@color/colorAlpha"
+            android:src="@drawable/icon_home_fh"/>
+
+        <TextView
+            android:id="@+id/tv_next_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/smallSpace"
+            android:gravity="center"
+            android:text="@string/next_step"
+            android:textColor="@color/colorTextWhite"/>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_l">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_release_lc2"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/padding_m"
+                android:text="@string/service_publish_2"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_m"
+                android:background="@color/colorDivBackground"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_choose_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:padding="@dimen/smallSpace">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_m"
+                    android:text="美食家"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_title"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_s"
+                    android:text="开胃小菜"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_title"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_m"
+                    android:src="@drawable/icon_common_arrow_right"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorDivLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/smallSpace">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_m"
+                    android:text="@string/ican"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_title"/>
+
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/example_for_skills"
+                    android:textSize="@dimen/text_title"/>
+
+
+                <TextView
+                    android:id="@+id/tv_text_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/padding_s"
+                    android:text="0/7"
+                    android:textSize="@dimen/text_tip"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorDivLine"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_m">
+
+                <EditText
+                    android:id="@+id/et_input_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/description"
+                    android:text="你好，很高兴认识你们哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+                    android:textSize="@dimen/text_content"/>
+
+
+                <TextView
+                    android:id="@+id/tv_text_num_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:padding="@dimen/padding_s"
+                    android:text="0/300"
+                    android:textSize="@dimen/text_tip"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/padding_m">
+
+                <GridView
+                    android:id="@+id/grid_view_add_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnWidth="90dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="4dp"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="4dp"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_m"
+                android:background="@color/colorDivBackground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/smallSpace"
+                        android:text="@string/unit"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/text_content"/>
+
+                    <EditText
+                        android:id="@+id/et_input_unit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/please_input_service_unit"
+                        android:textSize="@dimen/text_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/smallSpace"
+                        android:text="@string/service_price"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/text_content"/>
+
+                    <EditText
+                        android:id="@+id/et_input_price"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/please_input_price"
+                        android:textSize="@dimen/text_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/smallSpace"
+                        android:text="@string/stock"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/text_content"/>
+
+                    <EditText
+                        android:id="@+id/et_input_stock"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/please_input_stock"
+                        android:textSize="@dimen/text_content"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

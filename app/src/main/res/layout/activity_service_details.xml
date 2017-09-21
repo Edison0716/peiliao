@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:CircleIndicator="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lll"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorMain">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="定制生日蛋糕"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="18sp"/>
+
+
+            <ImageButton
+                android:id="@+id/ic_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+
+                android:background="#00000000"
+                android:src="@drawable/icon_common_back"/>
+
+
+        </RelativeLayout>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_service_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+        
+    </LinearLayout>
+
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/lll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/ibtn_whisper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorAlpha"
+            android:src="@drawable/icon_details_whisper"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorAlpha"
+            android:src="@drawable/icon_details_message"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorAlpha"
+            android:src="@drawable/icon_detials_collection"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_buy_now"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorAlpha"
+            android:src="@drawable/icon_details_buy_now"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

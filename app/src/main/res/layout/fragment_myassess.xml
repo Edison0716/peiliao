@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorMain">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="评价服务者"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="18sp"/>
+
+
+        <ImageButton
+            android:id="@+id/ic_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+
+            android:background="#00000000"
+            android:src="@drawable/icon_common_back1"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/colorTextWhite"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/frameLayout">
+                    <ImageButton
+                        android:id="@+id/iv_headImage"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_order_head" />
+                    <ImageView
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_gravity="bottom|right"
+                        android:src="@drawable/icon_order_sexwoman" />
+
+                </FrameLayout>
+                <TextView
+                    android:typeface="monospace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="莱昂纳多"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="55dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="我能*陪聊天"/>
+            </RelativeLayout>
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:scaleX="0.9"
+                android:scaleY="0.6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/div_evaluation_score"/>
+            <RelativeLayout
+                android:scaleY="0.8"
+                android:scaleX="0.8"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RatingBar
+
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+             <!--   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+
+                        android:layout_height="50dp"
+                        android:background="@drawable/icon_pj_star2"
+                        />
+                    <ImageButton
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+
+                        android:layout_height="50dp"
+                        android:background="@drawable/icon_pj_star2"
+                        />
+                    <ImageButton
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+
+                        android:layout_height="50dp"
+                        android:background="@drawable/icon_pj_star2"
+                        />
+                    <ImageButton
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+
+                        android:layout_height="50dp"
+                        android:background="@drawable/icon_pj_star2"
+                        />
+                    <ImageButton
+                        android:layout_margin="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+
+                        android:layout_height="50dp"
+                        android:background="@drawable/icon_pj_star2"
+                        />
+                </LinearLayout>-->
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:scaleX="0.9"
+                android:scaleY="0.6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/div_evaluation_share"/>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/ib_takePhoto"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/icon_pj_tjzp"
+                    />
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/iv_show"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    />
+
+
+            </RelativeLayout>
+            <LinearLayout
+                Android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="3"
+                    android:textSize="@dimen/font_size_12"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:hint="请输入对Ta的评价吧"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="0/40"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#f1f1f1"></View>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorTextWhite"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+                    <com.wenmingkeji.peiliao.view.SmoothCheckBox
+                        android:id="@+id/scb"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+
+                        />
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginBottom="10dp"
+                        style="@style/textStyle1"
+                        android:text="匿名评价"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发表评论"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorTextLevel"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

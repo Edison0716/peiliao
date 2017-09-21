@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorMain">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="通知与消息"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="18sp"/>
+
+
+        <ImageButton
+            android:id="@+id/ic_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+
+            android:background="#00000000"
+            android:src="@drawable/icon_common_back1"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/MyItemStyle"
+            android:text="聊一聊~欢迎语"/>
+
+        <ImageButton
+            style="@style/MyIconLoadMore"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="15dp"
+        style="@style/PartingLine"></View>
+    <RelativeLayout
+        android:id="@+id/rl_block"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        style="@style/MyItemStyle"
+        android:text="聊一聊~拉黑的人"/>
+
+    <ImageButton
+        style="@style/MyIconLoadMore"
+        />
+</RelativeLayout>
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/div_line"/>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/MyItemStyle"
+            android:textColor="@color/colorBlack"
+            android:text="夜间勿扰模式"/>
+        <com.wenmingkeji.peiliao.view.ToggleSwitch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggleView"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="18dp"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorTextGray"
+        android:textSize="@dimen/font_size_12"
+        android:text="开启后，在22：00间的新订单，将不会电话通知"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDivComment1"/>
+</LinearLayout>

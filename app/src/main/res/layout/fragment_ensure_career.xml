@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorMain">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="确认职业"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="18sp"/>
+
+
+        <ImageButton
+            android:id="@+id/ic_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+
+            android:background="#00000000"
+            android:src="@drawable/icon_common_back1"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/icon_qrzy_tx"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:textSize="@dimen/font_size_16"
+            android:textColor="@color/colorTextGray"
+        style="@style/textStyle1"
+        android:text="莱昂那多"/>
+    </RelativeLayout>
+    <ListView
+        android:layout_weight="7"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="18dp"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/lv_career"></ListView>
+        <Button
+            android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="确定完成"
+        android:background="@color/colorDotSelected"
+        android:textColor="@color/colorTextWhite"
+        />
+</LinearLayout>

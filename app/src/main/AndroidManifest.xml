@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wenmingkeji.peiliao">
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".controller.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:replace="android:icon">
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.HomeActivity"></activity>
+        <activity android:name=".activities.ServiceDetailsActivity" />
+        <activity android:name=".activities.Main2Activity" />
+        <activity android:name=".activities.GridDetailsActivity" />
+        <activity android:name=".activities.Main3Activity" />
+        <activity android:name=".activities.ServiceAppointActivity" />
+        <activity android:name=".activities.ServicePayActivity" />
+        <activity android:name=".activities.OrderDetailsActivity" />
+        <activity android:name=".activities.TalentPublishActivity" />
+        <activity android:name=".activities.PublishVoiceActivity" />
+        <activity android:name=".activities.PublishTextActivity" />
+        <activity android:name=".activities.PublishServiceActivity" />
+        <activity
+            android:name=".activities.Main4Activity"
+            android:label="@string/title_activity_main4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.ChooseRelativeServiceActivity" />
+        <activity android:name=".activities.TimeManagerActivity" />
+        <activity
+            android:name=".activities.MessageChatActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activities.TalentPersonalActivity" />
+        <activity android:name=".activities.TalentStatusDetailsActivity" />
+        <activity android:name=".activities.WebViewActivity" />
+        <activity android:name=".activities.PersonalDataActivity" />
+        <activity android:name=".activities.SettingActivity" />
+        <activity android:name=".activities.DataCompleteActivity" />
+        <activity android:name=".activities.FeedbackActivity" />
+        <activity android:name=".activities.CollectionActivity" />
+        <activity android:name=".activities.AttentionActivity" />
+        <activity android:name=".activities.SexActivity" />
+        <activity android:name=".activities.SelectCityActivity" />
+        <activity android:name=".activities.MyAssessActivity" />
+        <activity android:name=".activities.HadPaidActivity" />
+        <activity android:name=".activities.AddressActivity" />
+        <activity android:name=".activities.ManageCareerFirstActivity" />
+        <activity android:name=".activities.ManageCareerActivity" />
+        <activity android:name=".activities.AlreadyPurchasedActivity" />
+        <activity android:name=".activities.NickNameActivity" />
+        <activity android:name=".activities.NotiNewsActivity" />
+        <activity android:name=".activities.PersonalAuthenticationActivity" />
+        <activity android:name=".activities.EnsureCareerActivity" />
+        <activity android:name=".activities.TitleApproveActivity" />
+        <activity android:name=".activities.TureNameApproveActivity" />
+        <activity android:name=".activities.bindPhoneNumActivity" />
+        <activity android:name=".activities.BalanceActivity" />
+        <activity android:name=".activities.RechargeActivity" />
+        <activity android:name=".activities.DrawMoneyRecord" />
+        <activity android:name=".activities.ChooseCardTypeActivity" />
+        <activity android:name=".activities.IndividualCertificationActivity" />
+        <activity android:name=".activities.StartBindCreditCertificationActivity" />
+        <activity android:name=".activities.EnterpriseCertificationActivity" />
+        <activity android:name=".activities.WorkNumActivity" />
+        <activity android:name=".activities.IntroduceYourselfActivity" />
+        <activity android:name=".activities.UpdateIntroductionActivity" />
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.SigninAtivity" />
+        <activity
+            android:name=".activities.IncomeDetailsActivity"
+            android:label="@string/title_activity_get_money_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.DrawMoneyDetails"
+            android:label="@string/title_activity_draw_money_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.WelcomeActivity" />
+        <activity android:name=".activities.BlockActivity" />
+        <activity android:name=".activities.AddNewAddressActivity" />
+        <activity android:name=".activities.SetAvatarActivity" />
+        <activity android:name=".activities.EditAddressActivity" />
+        <activity android:name=".activities.ChoiceConstellationActivity"></activity>
+        <receiver android:name="com.wenmingkeji.peiliao.wechat.AppRegister">
+        <intent-filter>
+        <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"/>
+        </intent-filter>
+
+    </receiver>
+    </application>
+
+</manifest>

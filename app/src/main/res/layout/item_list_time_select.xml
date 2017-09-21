@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingEnd="@dimen/padding_m"
+              android:paddingStart="@dimen/padding_m">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_m">
+
+        <TextView
+            android:id="@+id/tv_morning_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/morning"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_content"/>
+
+        <!--
+                <com.wenmingkeji.peiliao.view.ToggleSwitch
+                    android:id="@+id/toggleView_morning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    />-->
+
+        <ImageView
+            android:id="@+id/iv_time_morning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_tz_switch"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDivLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_m">
+
+        <TextView
+
+            android:id="@+id/tv_afternoon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/afternoon"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_content"/>
+
+
+        <!--  <com.wenmingkeji.peiliao.view.ToggleSwitch
+              android:id="@+id/toggleView_afternoon"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              />-->
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDivLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_m">
+
+        <TextView
+            android:id="@+id/tv_evening"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/evening"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_content"/>
+
+
+        <!-- <com.wenmingkeji.peiliao.view.ToggleSwitch
+             android:id="@+id/toggleView_evening"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             />-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

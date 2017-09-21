@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/careerItem"
+    android:layout_height="wrap_content"
+    >
+
+        <ImageView
+            android:id="@+id/iv_careerIcon"
+            android:layout_marginTop="10dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+           />
+        <TextView
+            android:id="@+id/tv_careerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="美食家"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dp_22"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="12dp"
+            android:text=""
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="60dp"
+            />
+        <ImageView
+            android:id="@+id/iv_checked"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_voice_check"/>
+
+    <View
+        android:layout_marginTop="120dp"
+        style="@style/PartingLine"
+        android:background="@color/colorDivLine"
+        android:layout_height="10dp"></View>
+</RelativeLayout>

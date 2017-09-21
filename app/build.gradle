@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "22.0.1"
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.wenmingkeji.peiliao"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+apply plugin: 'com.neenbedankt.android-apt'
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.shizhefei:ViewPagerIndicator:1.0.7'
+    compile 'com.android.support:support-v4:23.0.0'
+    compile 'me.relex:circleindicator:1.2.1@aar'
+    compile 'com.github.frank-zhu:pullzoomview:1.0.0'
+    compile 'com.android.support:support-v4:23.0.0'
+    compile 'com.github.frank-zhu:pullzoomview:1.0.0'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.9.7'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.jaeger.statusbaruitl:library:1.1.1'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.3.0'
+    compile 'com.orhanobut:logger:1.15'
+    compile project(':magicindicator')
+    compile 'com.github.lovetuzitong:MultiImageSelector:1.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.lzy.widget:imagepicker:+'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.joanzapata.android:base-adapter-helper:1.1.11'
+    apt 'org.greenrobot:eventbus-annotation-processor:3.0.1'
+    compile 'com.zhy:base-adapter:3.0.2'
+    compile 'com.github.dongjunkun:DropDownMenu:1.0.3'
+    //    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.lzy.net:okhttputils:1.6.7'
+    //可以单独使用，不需要依赖下方的扩展包
+    compile 'com.lzy.net:okhttpserver:0.1.7'
+    //扩展了下载管理和上传管理，根据需要添加
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile files('D:/project/peiliao/xUtils-2.6.14.jar')
+    compile files('D:/project/peiliao/alipaySdk-20160516.jar')
+    compile 'com.githang:androidsnippet:0.5'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.kaopiz:kprogresshud:1.0.1'
+    compile files('D:/project/peiliao/libammsdk.jar')
+}
+
+apt {
+    arguments {
+        eventBusIndex "com.study.sangerzhong.studyapp.MyEventBusIndex"
+    }
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <RelativeLayout
+        android:descendantFocusability= "blocksDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/iv_headImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_order_head" />
+
+        <ImageView
+            android:id="@+id/iv_sex"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/icon_order_sexwoman" />
+    </FrameLayout>
+        <TextView
+            android:id="@+id/userName"
+            style="@style/textStyle1"
+            android:text="莱昂那多"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="13dp"/>
+        <ImageView
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_niuren_zxs"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="40dp"/>
+        <TextView
+            android:id="@+id/jobName"
+           style="@style/textStyle1"
+            android:text="中极咨询师"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="40dp"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/colorAccent"
+            />
+        <TextView
+            android:id="@+id/fansNum"
+            style="@style/textStyle1"
+            android:text="295 粉丝"
+            android:textSize="@dimen/font_size_12"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorAccent"
+            />
+        <Button
+            android:id="@+id/cancelAttent"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_gz_qxgz_pressed"/>
+
+</RelativeLayout>
+    <View
+        style="@style/PartingLine1"></View>
+</LinearLayout>

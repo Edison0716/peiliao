@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll">
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/rv_talent_personal_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="@dimen/padding_m">
+
+        <EditText
+            android:id="@+id/et_msg_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/leave_a_message"
+            android:maxLines="1"
+            android:textSize="@dimen/text_content"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_msg_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAlpha"
+            android:src="@drawable/icon_xxxq_fs"/>
+    </LinearLayout>
+
+</RelativeLayout>

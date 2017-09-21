@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.wenmingkeji.peiliao.view.SquareLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ad1"
+            android:scaleType="centerCrop"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_delete_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/icon_release_check"/>
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/ibtn_add_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#eeeeee"
+        android:src="@drawable/icon_ask_tjzp"
+        android:visibility="gone"/>
+
+
+</com.wenmingkeji.peiliao.view.SquareLayout>
+
